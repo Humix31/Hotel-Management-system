@@ -1,0 +1,234 @@
+{
+  "tables": [
+    {
+      "id": 1,
+      "name": "Table 01",
+      "status": "available",
+      "guests": 2,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 2,
+      "name": "Table 02",
+      "status": "available",
+      "guests": 4,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 3,
+      "name": "Table 03",
+      "status": "available",
+      "guests": 3,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 4,
+      "name": "Table 04",
+      "status": "available",
+      "guests": 2,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 5,
+      "name": "Table 05",
+      "status": "available",
+      "guests": 4,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 6,
+      "name": "Table 06",
+      "status": "available",
+      "guests": 2,
+      "order": [],
+      "total": 0
+    },
+    {
+      "id": 7,
+      "name": "Table 07",
+      "status": "available",
+      "guests": 5,
+      "order": [],
+      "total": 0
+    }
+  ],
+  "parcelOrders": [
+    {
+      "id": 1048,
+      "customer": "Aarav",
+      "items": [
+        {
+          "id": 1,
+          "name": "Idly",
+          "qty": 2,
+          "price": 40
+        },
+        {
+          "id": 3,
+          "name": "Coffee",
+          "qty": 1,
+          "price": 35
+        }
+      ],
+      "total": 115,
+      "status": "ready"
+    },
+    {
+      "id": 1049,
+      "customer": "Maya",
+      "items": [
+        {
+          "id": 5,
+          "name": "Meals",
+          "qty": 1,
+          "price": 140
+        }
+      ],
+      "total": 140,
+      "status": "preparing"
+    }
+  ],
+  "bills": [
+    {
+      "id": "BILL-1021",
+      "reference": "Table 02",
+      "type": "table",
+      "amount": 255,
+      "status": "paid",
+      "itemCount": 3
+    },
+    {
+      "id": "BILL-1022",
+      "reference": "Table 03",
+      "type": "table",
+      "amount": 170,
+      "status": "ready",
+      "itemCount": 2
+    },
+    {
+      "id": "BILL-1023",
+      "reference": "Parcel #1048",
+      "type": "parcel",
+      "amount": 115,
+      "status": "ready",
+      "itemCount": 2
+    },
+    {
+      "id": "BILL-2033",
+      "reference": "Table 02",
+      "type": "table",
+      "amount": 255,
+      "status": "ready",
+      "itemCount": 5
+    },
+    {
+      "id": "BILL-2180",
+      "reference": "Table 01",
+      "type": "table",
+      "amount": 0,
+      "status": "ready",
+      "itemCount": 0
+    },
+    {
+      "id": "BILL-2562",
+      "reference": "Table 02",
+      "type": "table",
+      "amount": 210,
+      "status": "ready",
+      "itemCount": 5
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Idly",
+      "category": "Breakfast",
+      "price": 40,
+      "description": "Soft rice cakes",
+      "image": "🍽️"
+    },
+    {
+      "id": 2,
+      "name": "Dosa",
+      "category": "Breakfast",
+      "price": 60,
+      "description": "Crispy golden dosa",
+      "image": "🥞"
+    },
+    {
+      "id": 3,
+      "name": "Coffee",
+      "category": "Beverages",
+      "price": 35,
+      "description": "Fresh brewed coffee",
+      "image": "☕"
+    },
+    {
+      "id": 4,
+      "name": "Tea",
+      "category": "Beverages",
+      "price": 25,
+      "description": "Hot masala tea",
+      "image": "🫖"
+    },
+    {
+      "id": 5,
+      "name": "Meals",
+      "category": "Main Course",
+      "price": 140,
+      "description": "Full meals combo",
+      "image": "🍲"
+    },
+    {
+      "id": 6,
+      "name": "Biriyani",
+      "category": "Rice",
+      "price": 180,
+      "description": "Traditional biryani",
+      "image": "🍛"
+    },
+    {
+      "id": 7,
+      "name": "Juice",
+      "category": "Beverages",
+      "price": 70,
+      "description": "Fresh fruit juice",
+      "image": "🥤"
+    },
+    {
+      "id": 8,
+      "name": "Kesari Bath",
+      "category": "Breakfast",
+      "price": 50,
+      "description": "Sweet semolina delight",
+      "image": "🍚"
+    },
+    {
+      "id": 9,
+      "name": "Gulab Jamun",
+      "category": "Desserts",
+      "price": 45,
+      "description": "Soft and sweet",
+      "image": "🍮"
+    },
+    {
+      "id": 10,
+      "name": "Samosa",
+      "category": "Snacks",
+      "price": 30,
+      "description": "Crispy savory snack",
+      "image": "🥟"
+    }
+  ],
+  "sales": {
+    "today": 3255,
+    "activeTables": 3,
+    "parcelOrders": 2,
+    "pendingBills": 3
+  }
+}
