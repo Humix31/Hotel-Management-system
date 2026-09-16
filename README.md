@@ -1,6 +1,6 @@
-# Solstice Bistro POS
+# Hotel Management System
 
-A custom restaurant POS application with a live floor view, dine-in ordering, parcel counter, billing, UPI/cash payment flow, and menu/report management.
+A full-stack hotel management and restaurant POS application with a live floor view, dine-in ordering, parcel counter, billing, UPI/cash payment flow, menu management, and reports.
 
 ## Features
 
@@ -12,14 +12,15 @@ A custom restaurant POS application with a live floor view, dine-in ordering, pa
 - Cash payment flow with automatic change calculation
 - Menu management interface
 - Reports dashboard
-- Responsive custom UI designed for restaurant use
+- Responsive custom UI designed for hotel and restaurant operations
 
 ## Tech Stack
 
 - React
 - Vite
 - Express
-- Razorpay SDK
+- SQLite database using Node.js `node:sqlite`
+- Razorpay SDK for UPI payments
 - Custom CSS UI
 
 ## Project Structure
@@ -34,8 +35,7 @@ A custom restaurant POS application with a live floor view, dine-in ordering, pa
 │   ├── main.jsx
 │   └── styles.css
 ├── server/
-│   ├── server.js
-│   └── data.json
+│   └── server.js
 └── README.md
 ```
 
@@ -47,13 +47,15 @@ A custom restaurant POS application with a live floor view, dine-in ordering, pa
 npm install
 ```
 
-### 2. Start the backend
+### 2. Start the full application
 
 ```bash
-node server/server.js
+npm run dev
 ```
 
-### 3. Start the frontend
+The frontend runs at `http://localhost:5173` and the backend API runs at `http://localhost:3001`.
+
+### 3. Start only the frontend
 
 ```bash
 npm run dev:client
@@ -64,6 +66,12 @@ npm run dev:client
 ```bash
 npm run build
 ```
+
+## Database
+
+The backend uses a local SQLite database stored at `server/pos.db`. The database is created automatically when the backend starts and contains menu, table, order, bill, and parcel-order data.
+
+The generated database file is ignored by Git. To inspect or edit it, use a SQLite tool such as DB Browser for SQLite.
 
 ## Environment Variables
 
@@ -81,8 +89,8 @@ RAZORPAY_KEY_SECRET=your_key_secret
 
 ## Notes
 
-- The app uses local JSON-backed demo data for tables, menu items, bills, and parcel orders.
-- The current sample data is stored in `server/data.json`.
+- Real UPI payments require valid Razorpay credentials in `.env`.
+- Cash payments calculate the customer change automatically.
 
 ## License
 

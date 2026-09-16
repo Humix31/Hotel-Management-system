@@ -261,7 +261,7 @@ function App() {
         key: data.keyId,
         amount: data.amount,
         currency: data.currency,
-        name: 'Solstice Bistro',
+        name: 'Hotel Management System',
         description: `Payment for ${bill.reference}`,
         order_id: data.orderId,
         handler: async function (razorpayResponse) {
@@ -310,7 +310,7 @@ function App() {
         <div className="brand-lockup">
           <div className="brand-mark">S</div>
           <div className="brand-copy">
-            <div className="brand-name">Solstice Bistro</div>
+            <div className="brand-name">Hotel Management System</div>
             <div className="brand-tag">Restaurant POS</div>
           </div>
         </div>
@@ -771,7 +771,7 @@ function App() {
             </div>
 
             <div className="detail-card">
-              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.8rem', textAlign: 'center' }}>Solstice Bistro</div>
+              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.8rem', textAlign: 'center' }}>Hotel Management System</div>
               <p className="subtle-text" style={{ textAlign: 'center' }}>Table 02 • Paid</p>
               <table className="bill-list">
                 <thead>
@@ -837,7 +837,7 @@ function App() {
               ) : (
                 <div className="payment-summary">
                   <span>UPI ID</span>
-                  <strong>solsticebistro@upi</strong>
+                  <strong>hotelmanagement@upi</strong>
                 </div>
               )}
             </div>
